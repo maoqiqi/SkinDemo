@@ -7,7 +7,7 @@ import com.software.march.skin.attr.SkinSupportAttr;
 import java.util.List;
 
 /**
- * 支持更改皮肤的视图
+ * 定义支持更改皮肤的视图
  *
  * @author Doc.March
  * @date 2017/6/9

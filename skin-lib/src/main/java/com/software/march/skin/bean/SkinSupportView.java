@@ -54,9 +54,9 @@ public class SkinSupportView {
     }
 
     /**
-     * 清除皮肤
+     * 清除数据
      */
-    public void cleanSkin() {
+    public void clear() {
         if (view != null) view = null;
 
         if (attrs != null && attrs.size() > 0) attrs.clear();

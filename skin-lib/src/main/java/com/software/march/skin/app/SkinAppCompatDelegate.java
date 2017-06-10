@@ -150,4 +150,28 @@ public class SkinAppCompatDelegate implements LayoutInflaterFactory {
             if (!SkinResourcesManager.getInstance().isDefaultSkin()) skinSupportView.applySkin();
         }
     }
+
+    /**
+     * 应用皮肤
+     */
+    public void applySkin() {
+        if (mSkinSupportViews.size() == 0) return;
+
+        for (SkinSupportView skinSupportView : mSkinSupportViews) {
+            if (skinSupportView.getView() == null) continue;
+            skinSupportView.applySkin();
+        }
+    }
+
+    /**
+     * 清除那些支持更改皮肤的视图的集合数据
+     */
+    public void clear() {
+        if (mSkinSupportViews.size() == 0) return;
+
+        for (SkinSupportView skinSupportView : mSkinSupportViews) {
+            if (skinSupportView.getView() == null) continue;
+            skinSupportView.clear();
+        }
+    }
 }

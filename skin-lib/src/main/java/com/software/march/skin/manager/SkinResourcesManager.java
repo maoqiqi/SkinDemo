@@ -77,7 +77,7 @@ public class SkinResourcesManager {
     }
 
     /**
-     * 设置内置皮肤相关信息
+     * 设置内置皮肤后缀名
      *
      * @param skinSuffixName 内置皮肤后缀名
      */
@@ -85,12 +85,12 @@ public class SkinResourcesManager {
         mSkinSuffixName = skinSuffixName;
         mSkinPackageName = mContext.getPackageName();
         mSkinResources = mContext.getResources();
-        mIsBuiltInSkin = SkinPreferencesManager.DEFAULT_SKIN_SUFFIX_NAME.equals(mSkinSuffixName);
+        mIsBuiltInSkin = true;
         mIsExternalSkin = false;
     }
 
     /**
-     * 设置外部皮肤相关信息
+     * 设置外部皮肤包名和资源
      *
      * @param skinPackageName 包名
      * @param skinResources   资源
@@ -100,7 +100,7 @@ public class SkinResourcesManager {
         mSkinPackageName = skinPackageName;
         mSkinResources = skinResources;
         mIsBuiltInSkin = false;
-        mIsExternalSkin = !skinPackageName.equals(mContext.getPackageName());
+        mIsExternalSkin = true;
     }
 
     /**

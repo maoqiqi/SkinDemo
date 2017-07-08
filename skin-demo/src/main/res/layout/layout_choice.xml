@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/card_bg"
+    android:orientation="vertical"
+    android:padding="@dimen/eight">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_edit_text_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/eight">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="性别："
+            android:textColor="@color/text_primary_color"
+            android:textSize="@dimen/text_size_normal" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_boy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="男"
+                android:textColor="@color/text_primary_color"
+                android:textSize="@dimen/text_size_normal" />
+
+            <RadioButton
+                android:id="@+id/rb_girl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/sixteen"
+                android:text="女"
+                android:textColor="@color/text_primary_color"
+                android:textSize="@dimen/text_size_normal" />
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/eight"
+        android:background="@drawable/selector_edit_text_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/eight">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="爱好："
+            android:textColor="@color/text_primary_color"
+            android:textSize="@dimen/text_size_normal" />
+
+        <CheckBox
+            android:id="@+id/cb_qin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="琴"
+            android:textColor="@color/text_primary_color"
+            android:textSize="@dimen/text_size_normal" />
+
+        <CheckBox
+            android:id="@+id/cb_qi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/sixteen"
+            android:text="棋"
+            android:textColor="@color/text_primary_color"
+            android:textSize="@dimen/text_size_normal" />
+
+        <CheckBox
+            android:id="@+id/cb_shu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/sixteen"
+            android:text="书"
+            android:textColor="@color/text_primary_color"
+            android:textSize="@dimen/text_size_normal" />
+
+        <CheckBox
+            android:id="@+id/cb_hua"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/sixteen"
+            android:text="画"
+            android:textColor="@color/text_primary_color"
+            android:textSize="@dimen/text_size_normal" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="@color/colorPrimaryDark">
+
+    <item>
+        <selector>
+            <item android:state_pressed="true">
+                <shape>
+                    <corners android:radius="@dimen/four" />
+                    <padding
+                        android:bottom="@dimen/eight"
+                        android:left="@dimen/eight"
+                        android:right="@dimen/eight"
+                        android:top="@dimen/eight" />
+                    <solid android:color="@color/colorPrimaryDark" />
+                </shape>
+            </item>
+            <item>
+                <shape>
+                    <corners android:radius="@dimen/four" />
+                    <padding
+                        android:bottom="@dimen/eight"
+                        android:left="@dimen/eight"
+                        android:right="@dimen/eight"
+                        android:top="@dimen/eight" />
+                    <solid android:color="@color/colorPrimary" />
+                </shape>
+            </item>
+        </selector>
+    </item>
+</ripple>

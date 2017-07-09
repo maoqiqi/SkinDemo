@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:skin="http://schemas.android.com/skin"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="@drawable/card_bg"
@@ -16,7 +17,8 @@
         android:maxLines="1"
         android:padding="@dimen/eight"
         android:textCursorDrawable="@drawable/edit_text_cursor"
-        android:textSize="@dimen/text_size_normal" />
+        android:textSize="@dimen/text_size_normal"
+        skin:enable="true" />
 
     <EditText
         android:id="@+id/et_password"
@@ -30,7 +32,8 @@
         android:maxLength="16"
         android:padding="@dimen/eight"
         android:textCursorDrawable="@drawable/edit_text_cursor"
-        android:textSize="@dimen/text_size_normal" />
+        android:textSize="@dimen/text_size_normal"
+        skin:enable="true" />
 
     <Button
         android:id="@+id/btn_login"
@@ -42,6 +45,7 @@
         android:gravity="center"
         android:text="Login In"
         android:textColor="@color/white"
-        android:textSize="@dimen/text_size_large" />
+        android:textSize="@dimen/text_size_large"
+        skin:enable="true" />
 
 </LinearLayout>

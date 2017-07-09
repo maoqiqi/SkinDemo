@@ -2,14 +2,24 @@
 <resources>
     <color name="white">#ffffff</color>
 
-    <color name="colorPrimary">#2196F3</color>
-    <color name="colorPrimaryDark">#1565C0</color>
-    <color name="colorAccent">#2196F3</color>
+    <color name="color_primary">#2196F3</color>
+    <color name="color_primary_dark">#1565C0</color>
+    <color name="color_accent">#2196F3</color>
 
     <color name="bg">#eaeaea</color>
     <color name="edit_text_cursor">#999999</color>
     <color name="edit_text_bg">#999999</color>
 
     <color name="text_primary_color">#2d2d2d</color>
+
+    <!-- 绿色主题 -->
+    <color name="color_primary_green">#4CAF50</color>
+    <color name="color_primary_dark_green">#2E7D32</color>
+    <color name="color_accent_green">#4CAF50</color>
+
+    <!-- 红色主题 -->
+    <color name="color_primary_red">#F44336</color>
+    <color name="color_primary_dark_red">#C62828</color>
+    <color name="color_accent_red">#F44336</color>
 
 </resources>

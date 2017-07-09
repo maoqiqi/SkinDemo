@@ -4,14 +4,14 @@
         <shape>
             <corners android:radius="@dimen/four" />
             <padding android:bottom="@dimen/eight" android:left="@dimen/eight" android:right="@dimen/eight" android:top="@dimen/eight" />
-            <solid android:color="@color/color_primary_dark" />
+            <solid android:color="@color/color_primary_dark_green" />
         </shape>
     </item>
     <item>
         <shape>
             <corners android:radius="@dimen/four" />
             <padding android:bottom="@dimen/eight" android:left="@dimen/eight" android:right="@dimen/eight" android:top="@dimen/eight" />
-            <solid android:color="@color/color_primary" />
+            <solid android:color="@color/color_primary_green" />
         </shape>
     </item>
 </selector>

@@ -194,7 +194,7 @@ public class SkinResourcesManager {
 
         if (!"drawable".equals(typeName) && "mipmap".equals(drawable)) return drawable;
 
-        int drawableId = mSkinResources.getIdentifier(entryName, typeName, mSkinPackageName);
+        int drawableId = mSkinResources.getIdentifier(appendSkinSuffixName(entryName), typeName, mSkinPackageName);
 
         return drawableId == 0 ? drawable : mSkinResources.getDrawable(drawableId);
     }
@@ -211,7 +211,7 @@ public class SkinResourcesManager {
 
         String entryName = mContext.getResources().getResourceEntryName(resId);
 
-        int colorStateListId = mSkinResources.getIdentifier(entryName, "color", mSkinPackageName);
+        int colorStateListId = mSkinResources.getIdentifier(appendSkinSuffixName(entryName), "color", mSkinPackageName);
 
         return colorStateListId == 0 ? colorStateList : mSkinResources.getColorStateList(colorStateListId);
     }

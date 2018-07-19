@@ -1,74 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:skin="http://schemas.android.com/skin"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/bg"
-    android:orientation="vertical"
-    android:padding="@dimen/eight"
     tools:context="com.software.march.skin.demo.MainActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingBottom="@dimen/eight"
-        android:paddingLeft="@dimen/four"
-        android:paddingRight="@dimen/four"
-        android:paddingTop="@dimen/eight">
+        android:orientation="vertical">
 
-        <TextView
-            android:layout_width="22dp"
-            android:layout_height="22dp"
-            android:background="@drawable/selector_label_bg"
-            android:gravity="center"
-            android:text="1"
-            android:textColor="@color/bg"
-            android:textSize="@dimen/text_size_small"
-            android:textStyle="bold"
-            skin:enable="true" />
+        <fragment
+            android:id="@+id/login_fragment"
+            android:name="com.software.march.skin.demo.LoginFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:layout_marginLeft="@dimen/eight"
-            android:text="Login"
-            android:textColor="@color/text_primary_color"
-            android:textSize="@dimen/text_size_normal"
-            android:textStyle="bold" />
+        <fragment
+            android:id="@+id/choice_fragment"
+            android:name="com.software.march.skin.demo.ChoiceFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
     </LinearLayout>
-
-    <include layout="@layout/layout_login" />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingBottom="@dimen/eight"
-        android:paddingLeft="@dimen/four"
-        android:paddingRight="@dimen/four"
-        android:paddingTop="@dimen/eight">
-
-        <TextView
-            android:layout_width="22dp"
-            android:layout_height="22dp"
-            android:background="@drawable/selector_label_bg"
-            android:gravity="center"
-            android:text="2"
-            android:textColor="@color/bg"
-            android:textSize="@dimen/text_size_small"
-            android:textStyle="bold" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:layout_marginLeft="@dimen/eight"
-            android:text="Choice"
-            android:textColor="@color/text_primary_color"
-            android:textSize="@dimen/text_size_normal"
-            android:textStyle="bold" />
-    </LinearLayout>
-
-    <include layout="@layout/layout_choice" />
-</LinearLayout>
+</ScrollView>
